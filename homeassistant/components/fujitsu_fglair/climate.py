@@ -15,6 +15,7 @@ from homeassistant.components.climate import (
     FAN_HIGH,
     FAN_LOW,
     FAN_MEDIUM,
+    FAN_QUIET,
     SWING_BOTH,
     SWING_HORIZONTAL,
     SWING_OFF,
@@ -35,6 +36,7 @@ HA_TO_FUJI_FAN = {
     FAN_MEDIUM: FanSpeed.MEDIUM,
     FAN_HIGH: FanSpeed.HIGH,
     FAN_AUTO: FanSpeed.AUTO,
+    FAN_QUIET: FanSpeed.QUIET,
 }
 FUJI_TO_HA_FAN = {value: key for key, value in HA_TO_FUJI_FAN.items()}
 
